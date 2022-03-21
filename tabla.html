@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas En Html</title>
+	<link rel="stylesheet" href="file:///C:/Users/sarita/Desktop/sitio-prueba/style_page.css" type="text/css">
+	<style type="text/css"> 
+		
+		table, th, td{ 
+			border:3px solid #6A638C; 
+			border-collapse: collapse;
+		}
+		th, td {
+    padding: 20px;
+    text-align: center;		/*background-color: #FBE1E0;*/
+		}
+	
+		h2{
+			font-size: 36px;
+		}
+			tr:hover{
+			background-color: darksalmon;
+			}
+		#style_tabla_1, #style_tabla_1 th, #style_tabla_1 td{
+			border: 3px solid #ED756E;
+		    border-collapse: separate;
+		}
+		#style_tabla_1{
+			width: 800px;
+			height: 300px;
+		}
+		#style_tabla_1 th{ 
+			background-color: #AFAFF3; 
+		}
+		#style_tabla_1 td{
+			text-align: center;
+		}
+		
+	    #style_tabla_1 th{
+			border: 3px solid #ED756E;
+		}
+			#style_tabla_1 td{
+			border: 3px solid #ED756E;
+		}
+		
+		#style_tabla_2 th, #style_tabla_2 td{
+			border:3px solid blue;
+		}
+		
+		#style_tabla_2 tr:nth-child(even){
+			background-color: #090A0F;
+			color:deeppink;
+		}
+		#style_tabla_2 tr:nth-child(odd){
+			background-color: darkslateblue;
+				color:aliceblue;
+		}
+		#style_tabla_2 th{
+			background-color:plum;
+				color:darkmagenta;
+			}
+		#encabezado_verde{
+			color:forestgreen;
+		}
+		.encabezado_par{
+			color:crimson;
+          	
+		}
+		.encabezado_impar{
+			color:blueviolet;
+			 
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1> Este contenido es de la etiqueta H1 de diseño</h1>
+		 </header>
+	<nav>
+  <ul>
+    <li><a href="../index.html">Inicio </a></li>
+    <li><a href="../estilo-texto.html">Estilo de texto </a></li>
+    <li><a href="audio.html">Audio </a></li>
+    <li><a href="formularios.html">Formularios </a></li>
+	<li><a href="tabla.html">Tablas</a></li>
+    <li><a href="fuentes.html">Fuentes</a></li>
+	<li><a href="listas.html">Listas</a></li>
+	<li><a href="video.html">Videos</a></li>
+  </ul>
+</nav>
+	<main>
+		<section >
+		<h2 class="encabezado_impar">Tabla Simple</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ulla Este es el contenido de la etiquetaP de diseño</p>
+			 
+		<table id="style_tabla_0" style="border:1px" solid#151723;> 
+		<thead>
+		<tr> 
+			<th colspan="3"> Apellido Paterno</th>
+		<!--	<th>Apellido Materno</th>
+			<th>Nombre </th>-->
+			<th>Edad</th>
+			<th>Celular</th>
+			<th>Email</th>
+			</tr>
+		</thead>
+			<tbody>
+			<tr>
+				<td> Herrera</td>
+				<td>Palacios </td>
+				<td>Monica </td>
+				<td>16 </td>
+				<td>2229918839 </td>
+				<td> mony.34@gmail.com </td>
+				</tr>
+				<tr>
+				<td>Perez </td>
+				<td> Juarez</td>
+				<td>Jorge  </td>
+				<td>15 </td>
+				<td> 2224567890</td>
+				<td>jorge_23@hotmail.com </td>
+				</tr>
+			</tbody>
+			<tfoot>
+			</tfoot>
+			</table>
+			</section>
+	<section>
+		<h2 class="encabezado_par">Tabla Modificada A tráves De Una Regla De Identificador En Css</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ulla Este es el contenido de la etiquetaP de diseño</p>
+			<table id="style_tabla_1">
+			  <tbody>
+			    <tr>
+			      <th scope="col">Nombre </th>
+			      <th scope="col">Dirección</th>
+			      <th scope="col">Teléfono</th>
+			      <th scope="col">Celular</th>
+		        </tr>
+			    <tr>
+			      <td>Maria </td>
+			      <td>calle 5 de mayo #45 col.Flores</td>
+			      <td>22225343</td>
+			      <td>2211234667</td>
+		        </tr>
+			    <tr>
+			      <td>Jose</td>
+			      <td>Avenida las Torres #5678</td>
+			      <td>22344569</td>
+			      <td>2228654379</td>
+		        </tr>
+			    <tr>
+			      <td>Pedro</td>
+			      <td>Calle Roble #4</td>
+			      <td>22345678</td>
+			      <td>2228675645</td>
+		        </tr>
+			    <tr>
+			      <td>Moises</td>
+			      <td>Privada 3 sur #45657</td>
+			      <td>22234987</td>
+			      <td>228435620</td>
+		        </tr>
+		      </tbody>
+	  </table>
+			<p>&nbsp; </p>
+	</section>
+		
+		<section>
+		<h2 id="encabezado_verde" class="encabezado_impar">Este contenido es de la etiqueta H2de diseño</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ulla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ulla Este es el contenido de la etiquetaP de diseño</p>
+			<table id="style_tabla_2">
+				<thead>
+				 <tr>
+			      <th scope="col">&nbsp;Marca&nbsp;</th>
+			      <th scope="col">Modelo&nbsp;</th>
+			      <th scope="col">&nbsp;Color</th>
+		        </tr>
+				</thead>
+			  <tbody>
+			 
+			    <tr>
+			      <td>Seat&nbsp;</td>
+			      <td>Ibiza&nbsp;</td>
+			      <td>Rojo&nbsp;&nbsp;</td>
+		        </tr>
+			    <tr>
+			      <td>&nbsp;VW</td>
+			      <td>Bora&nbsp;</td>
+			      <td>Blanco&nbsp;</td>
+		        </tr>
+			    <tr>
+			      <td>Renault&nbsp;&nbsp;</td>
+			      <td>&nbsp;X</td>
+			      <td>Verde&nbsp;</td>
+		        </tr>
+			    <tr>
+			      <td>Tsuro</td>
+			      <td>&nbsp;X</td>
+			      <td>Morado</td>
+		        </tr>
+		      </tbody>
+		  </table>
+			 </section>
+	<section>
+		<h2 class="encabezado_par">Este contenido es de la etiqueta H2 de diseño</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit a quas suscipit aliquid adipisci voluptate ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore soluta, quas suscipit aliquid adipisci voluptate ulla este es el contenido de la etiqueta P de diseño</p>
+			 </section>
+		 </main>
+	<footer><h6> Elaborado por Melanie S. Peña Enriquez </h6></footer>
+	
+</body>
+</html>
